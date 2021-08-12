@@ -75,7 +75,7 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="">User</a>
+                        <a class="collapse-item" href="{{ route('user.index') }}">User</a>
                         <a class="collapse-item" href="">Role</a>
                         <a class="collapse-item" href="">Permissions</a>
                     </div>
@@ -129,16 +129,7 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                    </div>
-
-                    <div class="row">
-                        @yield('content')
-                    </div>
-
+                    @yield('content')
                 </div>
                 <!-- /.container-fluid -->
 
